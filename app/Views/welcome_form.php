@@ -2,7 +2,9 @@
 <html lang="en">
 <head>
     <title>Clifford Psalm Orfanel</title>
-    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="<?= base_url('assets/css/style.css') ?>">
+
+
 </head>
 <body>
     <h2>Enter your name</h2>

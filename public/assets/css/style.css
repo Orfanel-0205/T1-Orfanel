@@ -1,21 +1,59 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: bisque;
-    padding: 20px;
+  background: linear-gradient(to right, #6a11cb, #2575fc);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background-color: white;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  text-align: center;
 }
 
 h2 {
-    color: #333;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
 }
 
-form input, form button {
-    padding: 10px;
-    margin-bottom: 10px ;
-    
+input[type="text"] {
+  padding: 12px;
+  width: 100%;
+  max-width: 300px;
+  margin-bottom: 20px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border 0.3s ease;
 }
 
-a {
-    color: #007BFF;
-    text-decoration: underline;
+input[type="text"]:focus {
+  border-color: #2575fc;
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background-color: #2575fc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #1a5ed9;
 }
