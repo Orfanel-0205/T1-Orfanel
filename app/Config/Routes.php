@@ -1,9 +1,5 @@
 <?php
 
-use CodeIgniter\Router\RouteCollection;
-
-/**
- * @var RouteCollection $routes
- */
-$routes->get('/', 'Welcome::index');
-$routes->setAutoRoute (true);
+$routes->get('/activity' , 'Activity::index');
+$routes->get('/activity/create' , 'Activity::create');
+$routes->post('/activity/store' , 'Activity::store');
